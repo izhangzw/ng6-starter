@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*****reset*****/
+a:hover{text-decoration: none;cursor: pointer;}
+ul{list-style: none;}
+
+/*****common*****/
+.poz_r{position: relative;}
+.fl{float: left;}
+.fr{float: right;}
+.line-ellipsis{overflow: hidden;text-overflow: ellipsis;-o-text-overflow:ellipsis;white-space: nowrap;}
+
+/*****tools*****/
+em.badge{background: #f24747;color: #fff; position: absolute;top: 10px;right: -10px;}
+blockquote{ font-size: inherit; padding: 2px 10px; margin: 0 0 10px; border-color: #000;}
+
+
+
+/*project*/
+.caption{height: 60px}
+nav.fixed{position: fixed;top: 0;left: 15px; right: 15px;z-index: 1000}
+.left-nav.fixed{position: fixed;top: 50px;z-index: 1000;}
+
+/*左侧导航*/
+.left-nav{width: 239px;background-color: #F6F6F6;position: absolute;border-right: 1px solid #ccc;}
+.nav-block{ margin-bottom: 0; padding-left: 0; overflow: hidden; }
+.nav-block ul{ -webkit-padding-start: 0 }
+.nav-block .nav-item{ line-height: 40px; position: relative; }
+.nav-block .nav-item .nav-item-content { display: block; }
+.nav-block .nav-item .nav-item-content i{ width: 48px; display: inline-block; text-align: center; }
+.nav-block .nav-item .nav-item-content:hover{ background-color: #e7e7e7; }
+.nav-block .nav-item.active>.nav-item-content{ background-color: #E1DFE1;}
+
+.nav-block .nav-item .nav-block-collapse>.glyphicon-menu-up{display: inline-block;}
+.nav-block .nav-item .nav-block-collapse>.glyphicon-menu-down{display: none;}
+.nav-block .nav-item .nav-block-collapse{ padding: 0 10px; position: absolute; top: 0; right: 0; }
+.nav-block .nav-item .nav-block-collapse:hover{	background-color: #e7e7e7; }
+.nav-block .nav-item.opened .nav-block-child{opacity: 1;height: auto;}
+.nav-block .nav-item.opened .nav-block-collapse>.glyphicon-menu-up{display: none}
+.nav-block .nav-item.opened .nav-block-collapse>.glyphicon-menu-down{display: inline-block;}
+
+.main-content{ margin-left: 240px; position: relative; padding: 10px; }
+.nav-block .nav-block-child{ padding: 0; opacity: 0;height: 0;}
+.nav-block .nav-item.nav-item-child{height: 30px;line-height: 30px;}
+.nav-block .nav-item.nav-item-child .nav-item-content{ padding-left: 62px;}
+.nav-block .nav-item.nav-item-child .nav-item-content>i{ display: none; }
+
+/*左侧折叠*/
+
+.nav-item-content-narrow{display: none;color: #000}
+.nav-item-content-narrow:hover{color: #000}
+
+.narrow .left-nav{width: 48px;}
+.narrow .main-content{margin-left: 49px}
+
+.narrow .nav-block{overflow: visible;}
+.narrow .nav-block .nav-item .nav-item-content span{display: none;}
+.narrow .nav-block .nav-item.nav-item-child span{display: initial;}
+.narrow .nav-block .nav-item .nav-block-collapse{display: none;}
+.narrow .nav-block .nav-item .nav-block-child{display: none;position: absolute;}
+
+.narrow .nav-block .nav-item:hover .nav-block-child,
+.narrow .nav-block .nav-item:hover > .nav-item-content-narrow{
+	display: block;
+	position: absolute;
+	left: 47px;
+	width: 170px;
+	z-index: 1000;
+}
+.narrow .nav-block .nav-item:hover > .nav-item-content-narrow{top: 0;}
+.narrow .nav-block .nav-item:hover .nav-block-child{top: 40px;background-color: #F6F6F6;}
+
+.narrow .nav-block .nav-item:hover > .nav-item-content-narrow,
+.narrow .nav-block .nav-item:hover .nav-item-content{background-color: #F6F6F6;}
+
+.narrow .nav-block .nav-item:hover > .nav-item-content-narrow,
+.narrow .nav-block .nav-item:hover .nav-item-child .nav-item-content{ padding-left: 10px }
+
+.narrow .nav-block .nav-item:hover > .nav-item-content-narrow:hover,
+.narrow .nav-block .nav-item:hover .nav-item-content:hover{background-color:#E1DFE1}
+.narrow .nav-block .nav-item-child.active{background-color:#E1DFE1}
+/*Table*/
+table {	font-size: 14px; }
+table th {}
+table th i{
+	color: #C8C8C8;
+	padding: 0px 3px;
+}
+table th i.question{}
+table th i.sort{
+	visibility: hidden;
+	color: #444;
+	font-size: 13px;
+}
+table th.table-sort:hover .sort,
+table th.table-sort.visited .sort{
+	visibility: visible;
+}
+
+.container{width:100%!important;}
+.navbar{border-radius: 0;margin-bottom: 0;border: none}
+.navbar .container{margin:0;padding:0;}
+.navbar .navbar-header .navbar-brand{margin-left: 0!important;}
+.navbar .navbar-nav > li > a {
+	font-size: 16px;
+	padding: 15px 30px;
+}
+.navbar .navbar-nav > li.dropdown > a {color:#fff;padding: 15px}

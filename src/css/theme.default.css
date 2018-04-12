@@ -1,0 +1,55 @@
+
+/*Color*/
+body{background-color: #FFF;}
+/*顶部导航*/
+.navbar-default{
+	background-color: #447ED9;
+	/*border-color: #e7e7e7;*/
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFF;
+  background-color: #4C8AEB;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #CFE2FF
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #FFF;
+  background-color: #337ab7;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+/*左侧导航*/
+.left-nav{background-color:#F1F1F1;border-right:1px solid #E1E1E1}
+.nav-block .nav-item i{color: #BABABA}
+.nav-block .nav-item .nav-item-content,
+.nav-block .nav-item .nav-item-content-narrow,
+.nav-block .nav-item .nav-item-content-narrow:hover{color: #000}
+.nav-block .nav-item-child .nav-item-content{color: #666}
+
+.nav-block .nav-item.active i,
+.nav-block .nav-item.active > .nav-item-content,
+.nav-block .nav-item.active > .nav-item-content-narrow,
+.nav-block .nav-item.sub-active i,
+.nav-block .nav-item.sub-active > .nav-item-content,
+.nav-block .nav-item.sub-active > .nav-item-content-narrow{color: #447ed9}
+
+.nav-block .nav-item.active > .nav-item-content{background-color: #E1DFE1;}
+
+.nav-block .nav-item .nav-item-content:hover,
+.nav-block .nav-item .nav-block-collapse:hover{	background-color: #e7e7e7; }
