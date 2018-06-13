@@ -82,7 +82,9 @@ AngularJS1.4.8 + webpack4.5.0 + ES6
 - 分离css用到了, 还有什么功能
 
 > html-webpack-plugin
-- xxx
+- 根据模板生成index
+- 能够压缩其他模板么
+
 
 #### 使用jQuery
 两种方式
