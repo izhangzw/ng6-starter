@@ -1,5 +1,6 @@
 @charset "utf-8";
 /*****reset*****/
+.test-fuck{background: url('../img/logo.jpg')}
 a:hover{text-decoration: none;cursor: pointer;}
 ul{list-style: none;}
 

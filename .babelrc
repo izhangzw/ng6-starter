@@ -1,7 +1,15 @@
 {
+//    "presets": [
+//        ["env", {
+//            "modules": false
+//        }]
+//    ],
+    //"presets": ["env"],
     "presets": [
-        ["env", {
-            "modules": false
-        }]
+        "es2015", "stage-0"
+    ],
+    "plugins": [
+        "transform-es3-member-expression-literals",
+        "transform-es3-property-literals"
     ]
 }
