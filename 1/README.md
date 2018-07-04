@@ -19,12 +19,17 @@
 
 [!]. 识别html中img的属性ng-src需要：attrs: ["img:ng-src"]
 
+
 [!]. webpack-dev-server 报错 [HMR] Hot Module Replacement is disabled
 
 A: plugins里面缺少new webpack.HotModuleReplacementPlugin()
+
 
 [!]. postcss-loader和autoprefixer的使用
 
 A: postcss-loader + autoprefixer 可以为css添加兼容性代码，请参考webpack.config.js中代码
 
+
+
 [?]. 打包后文件如何分文件夹存放
+[?]. autoprefixer browsers参数具体含义尚不明确
