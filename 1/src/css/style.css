@@ -1,0 +1,17 @@
+ul li a{
+    padding: 10px 30px;
+    background-color: #f1f2f3;
+    display: inline-block;
+    float: left;
+}
+
+
+ui-view{
+    display: block;
+    width: 100%;
+    height:333px;
+    font-size: 36px;
+    padding-top: 60px;
+    background: url("../img/5.jpg") no-repeat center center;
+    color: #fff;
+}
