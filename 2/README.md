@@ -13,7 +13,6 @@
 - 打包字体文件
 - 打包css中的图片
 - 打包html中的图片
-- 自动添加css兼容性代码
 
 ### 遇到的问题
 
@@ -22,9 +21,5 @@
 [!]. webpack-dev-server 报错 [HMR] Hot Module Replacement is disabled
 
 A: plugins里面缺少new webpack.HotModuleReplacementPlugin()
-
-[!]. postcss-loader和autoprefixer的使用
-
-A: postcss-loader + autoprefixer 可以为css添加兼容性代码，请参考webpack.config.js中代码
 
 [?]. 打包后文件如何分文件夹存放

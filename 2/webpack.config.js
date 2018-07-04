@@ -24,15 +24,9 @@ module.exports = {
                     {
                         loader:'css-loader',
                         options:{
-                            minimize: false //css压缩
+                            minimize: true //css压缩
                         }
-                    },
-                    {loader:'postcss-loader',
-                    options: {
-                        plugins: (loader) => [
-                            require('autoprefixer')({browsers: [ 'last 2 versions' ]}), //CSS浏览器兼容
-                        ]
-                    }}
+                    }
                 ],
             }) },
             { test: /\.(eot|svg|ttf|woff|woff2|otf)$/, 
@@ -71,11 +65,11 @@ module.exports = {
             filename: '[name].css',
             allChunks: true
         }),
-        new webpack.HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 7891,
+        port: 7890,
         host: '192.168.16.101',
         overlay: debug,
         hot: true,

@@ -15,11 +15,3 @@ ui-view{
     background: url("../img/5.jpg") no-repeat center center;
     color: #fff;
 }
-
-.circle{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #4C8AEB;
-    box-shadow: 1px 1px 1px #c8c7cc;
-}
